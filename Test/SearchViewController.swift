@@ -22,16 +22,25 @@ class SearchViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         self.title = "Search"
         myTableView.dataSource = self
         myTableView.delegate = self
         myTableView.backgroundColor = UIColor.lightGray
         myTableView.separatorStyle = .singleLine
         myTableView.allowsSelection = true
-
+        
         //remove empty cell
         myTableView.tableFooterView = UIView()
+        
+//        //do login request
+//        WebApiRequest.shared.doLoginRequest(user_id: "user25", completion:{(success) in
+//            if (success) {
+//                DispatchQueue.main.async {
+//                    //self.setUITexts()
+//                }
+//            }
+//        })
         
     }
     

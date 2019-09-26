@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,10 @@
 		87E7867521B63C2900D8E75C /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E7867221B63C2800D8E75C /* BookmarkViewController.swift */; };
 		87E7867621B63C2900D8E75C /* BowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E7867321B63C2900D8E75C /* BowserViewController.swift */; };
 		87E7867721B63C2900D8E75C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E7867421B63C2900D8E75C /* HistoryViewController.swift */; };
+		8DF42290233C83FF000A0B1D /* WebApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4228F233C83FF000A0B1D /* WebApiRequest.swift */; };
+		8DF42292233C8603000A0B1D /* WebApiAuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF42291233C8603000A0B1D /* WebApiAuthenticationRequest.swift */; };
+		8DF42295233C86EE000A0B1D /* WebClientLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF42294233C86EE000A0B1D /* WebClientLogin.swift */; };
+		8DF42297233C8903000A0B1D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF42296233C8903000A0B1D /* User.swift */; };
 		A61A05AD14181A9BA9FECD9A /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6025475DDF883D0DFB6FE8 /* Pods_Test.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +51,10 @@
 		87E7867221B63C2800D8E75C /* BookmarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		87E7867321B63C2900D8E75C /* BowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowserViewController.swift; sourceTree = "<group>"; };
 		87E7867421B63C2900D8E75C /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		8DF4228F233C83FF000A0B1D /* WebApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApiRequest.swift; sourceTree = "<group>"; };
+		8DF42291233C8603000A0B1D /* WebApiAuthenticationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApiAuthenticationRequest.swift; sourceTree = "<group>"; };
+		8DF42294233C86EE000A0B1D /* WebClientLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebClientLogin.swift; sourceTree = "<group>"; };
+		8DF42296233C8903000A0B1D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BCE8658178188447D8C17EBD /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +112,7 @@
 		87E7865F21B53F2F00D8E75C /* WebClient */ = {
 			isa = PBXGroup;
 			children = (
+				8DF42293233C86EE000A0B1D /* Login */,
 				87E7866021B53F2F00D8E75C /* WebClient.swift */,
 				87E7866121B53F2F00D8E75C /* WebClientSearch.swift */,
 			);
@@ -115,6 +124,7 @@
 			children = (
 				87E7866521B5412400D8E75C /* Search.swift */,
 				87E7867021B6390700D8E75C /* Bookmarks.swift */,
+				8DF42296233C8903000A0B1D /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,13 +138,22 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		8DF42293233C86EE000A0B1D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8DF42294233C86EE000A0B1D /* WebClientLogin.swift */,
+				8DF4228F233C83FF000A0B1D /* WebApiRequest.swift */,
+				8DF42291233C8603000A0B1D /* WebApiAuthenticationRequest.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		9545300E930435E1D37655A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				BCE8658178188447D8C17EBD /* Pods-Test.debug.xcconfig */,
 				11E51CE66DDB2790B5F5F5B9 /* Pods-Test.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -262,12 +281,16 @@
 				87E7867621B63C2900D8E75C /* BowserViewController.swift in Sources */,
 				87E7867121B6390700D8E75C /* Bookmarks.swift in Sources */,
 				87E7867721B63C2900D8E75C /* HistoryViewController.swift in Sources */,
+				8DF42295233C86EE000A0B1D /* WebClientLogin.swift in Sources */,
 				87E7866921B573E100D8E75C /* CellSearchBar.swift in Sources */,
+				8DF42297233C8903000A0B1D /* User.swift in Sources */,
 				87E7866B21B5895000D8E75C /* CellResult.swift in Sources */,
 				87E7866221B53F2F00D8E75C /* WebClient.swift in Sources */,
 				87E7866F21B59F8D00D8E75C /* ReadViewController.swift in Sources */,
+				8DF42290233C83FF000A0B1D /* WebApiRequest.swift in Sources */,
 				87E7866621B5412500D8E75C /* Search.swift in Sources */,
 				87E7866321B53F2F00D8E75C /* WebClientSearch.swift in Sources */,
+				8DF42292233C8603000A0B1D /* WebApiAuthenticationRequest.swift in Sources */,
 				8722801521B5112200A93A6E /* BaseViewController.swift in Sources */,
 				8722801321B5112200A93A6E /* AppDelegate.swift in Sources */,
 			);
