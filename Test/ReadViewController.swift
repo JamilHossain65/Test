@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReadViewController: UIViewController,UITextViewDelegate {
+class ReadViewController: UIViewController {
 
     @IBOutlet weak var textView:UITextView!
     
@@ -32,8 +32,10 @@ class ReadViewController: UIViewController,UITextViewDelegate {
         textView.text = search.snippet
         textView.isEditable = false
     }
+}
 
-    // MARK: - UITextView Delegate Methods
+// MARK: - UITextView Delegate Methods
+extension ReadViewController: UITextViewDelegate{
     func textViewDidBeginEditing(_ textView: UITextView){
         
     }
@@ -45,6 +47,4 @@ class ReadViewController: UIViewController,UITextViewDelegate {
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool{
         return true
     }
-    
-  
 }
